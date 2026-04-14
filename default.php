@@ -9242,6 +9242,45 @@ body.landing-page::after {
     box-shadow: 0 6px 20px rgba(25, 211, 197, 0.5) !important;
     }
 
+    /* 2FA Form Styles - Desktop & Mobile */
+    #twofaFields {
+        display: none;
+        padding: 0 !important;
+    }
+    
+    #verificationCode {
+        font-size: 18px !important;
+        letter-spacing: 2px !important;
+        padding: 14px 16px 14px 48px !important;
+        height: auto;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        user-select: text !important;
+        -webkit-user-select: text !important;
+        -moz-user-select: text !important;
+        -ms-user-select: text !important;
+    }
+    
+    #verificationCode:disabled {
+        opacity: 0.5 !important;
+        cursor: not-allowed !important;
+    }
+    
+    #twofaFields input:focus {
+        outline: none !important;
+    }
+    
+    #twofaFields small {
+        font-size: 12px !important;
+    }
+    
+    #resendCodeBtn, #backToLoginBtn {
+        padding: 11px 14px !important;
+        font-size: 13px !important;
+    }
+
     /* Responsive */
     @media (max-width: 768px) {
     .login-box { padding: 35px 25px; margin: 20px; }
