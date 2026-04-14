@@ -9256,6 +9256,23 @@ body.landing-page::after {
         letter-spacing: 3px !important;
         padding: 16px 14px 16px 48px !important;
         height: 52px;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        user-select: text !important;
+        -webkit-user-select: text !important;
+        -moz-user-select: text !important;
+        -ms-user-select: text !important;
+    }
+    
+    #verificationCode:disabled {
+        opacity: 0.5 !important;
+        cursor: not-allowed !important;
+    }
+    
+    #twofaFields input:focus {
+        outline: none !important;
     }
     
     #twofaFields small {
